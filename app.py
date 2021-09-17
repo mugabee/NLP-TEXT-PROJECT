@@ -2,8 +2,6 @@ from __future__ import unicode_literals
 from flask import Flask,render_template,url_for,request
 
 from spacy_summarization import text_summarizer
-#from gensim.summarization import summarize
-from nltk_summarization import nltk_summarizer
 import time
 import spacy
 nlp = spacy.load('en_core_web_sm')
