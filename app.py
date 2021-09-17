@@ -7,6 +7,8 @@ import time
 import spacy
 import en_core_web_md
 nlp = en_core_web_md.load()
+#import spacy
+#nlp = spacy.load('en_core_web_sm')
 
 app = Flask(__name__)
 

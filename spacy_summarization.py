@@ -1,6 +1,9 @@
 import spacy
+
 import en_core_web_md
 nlp = en_core_web_md.load()
+#import spacy
+#nlp = spacy.load('en_core_web_sm')
 from heapq import nlargest
 
 #normalizing text
@@ -47,10 +50,10 @@ def text_summarizer(raw_docx):
     summary_sentences = nlargest(7, sentence_scores, key=sentence_scores.get)
     final_sentences = [ w.text for w in summary_sentences ]
     summary = ' '.join(final_sentences)
-    print("Original Document\n")
-    print(raw_docx)
-    print("Total Length:",len(raw_docx))
-    print('\n\nSummarized Document\n')
-    print(summary)
-    print("Total Length:",len(summary))
+    # print("Original Document\n")
+    #print(raw_docx)
+    #print("Total Length:",len(raw_docx))
+    #print('\n\nSummarized Document\n')
+    #print(summary)
+    #print("Total Length:",len(summary))
     return summary
