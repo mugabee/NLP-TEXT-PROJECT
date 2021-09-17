@@ -1,5 +1,6 @@
 import spacy
-nlp = spacy.load('en_core_web_sm')
+import en_core_web_md
+nlp = en_core_web_md.load()
 from heapq import nlargest
 
 #normalizing text
