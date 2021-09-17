@@ -2,7 +2,8 @@ beautifulsoup4==4.7.0
 bs4==0.0.1      
 Flask==1.0.2      
 nltk==3.4        
-spacy==2.0.18     
+spacy==2.0.18
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz#egg=en_core_web_md==2.0.0    
 sumy==0.7.0      
 thinc==6.12.1     
 urllib3==1.24.1 

@@ -5,7 +5,9 @@ from spacy_summarization import text_summarizer
 from nltk_summarization import nltk_summarizer
 import time
 import spacy
-nlp = spacy.load('en_core_web_sm')
+import en_core_web_md
+nlp = en_core_web_md.load()
+
 app = Flask(__name__)
 
 # Web Scraping Pkg
